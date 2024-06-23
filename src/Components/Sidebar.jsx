@@ -5,29 +5,7 @@ import { CiUser } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import ConversationItem from "./ConversationItem";
 
-const Sidebar = () => {
-  const [conversations, setConversations] = useState([
-    {
-      name: "Test#1",
-      lastMessage: "Last Message #1",
-      timeStamp: "today",
-    },
-    {
-      name: "Test#2",
-      lastMessage: "Last Message #2",
-      timeStamp: "today",
-    },
-    {
-      name: "Test#3",
-      lastMessage: "Last Message #3",
-      timeStamp: "today",
-    },
-    {
-      name: "Test#3",
-      lastMessage: "Last Message #3",
-      timeStamp: "today",
-    },
-  ]);
+const Sidebar = ({ conversations }) => {
   return (
     <div className="sidebar-container">
       <div className="sb-header">
@@ -46,7 +24,12 @@ const Sidebar = () => {
       </div>
       <div className="sb-conversation">
         {conversations.map((conversation) => {
-          return <ConversationItem conversation={conversation} />;
+          return (
+            <ConversationItem
+              key={conversation.name}
+              conversation={conversation}
+            />
+          );
         })}
       </div>
     </div>

@@ -55,7 +55,7 @@
     grid-template-rows: auto auto;
     column-gap: 10px;
     padding: 5px;
-    background-color: rgb(88, 87, 87);
+    /* background-color: rgb(185, 185, 185); */
     margin: 5px;
     border-radius: 20px;
     }
@@ -70,12 +70,38 @@ flex:0.7;
     display: flex;
     align-items: center;
     gap: 10px;
-    background-color: white;
+
     padding: 10px 10px;
     margin: 10px;
     border-radius: 20px;}
 .messages-container {
-background-color: aquamarine;
+    
+
 flex: 1;}
 .text-input-area {
-    background-color: yellow;}
+background-color: rgb(155, 154, 154);
+padding:10px 5px;
+margin: 10px ;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+}
+.self-message-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.message-box{
+    background-color:rgb(60, 179, 179);
+    font-size: 1rem;
+    color:rgb(62, 62, 62);
+    padding:10px ;
+    margin: 10px ;
+    border-radius: 20px;
+}
+.other-text-content{
+    background-color: rgb(129, 129, 129);
+    padding: 10px;
+    margin:10px;
+    border-radius: 20px;
+    
+}
