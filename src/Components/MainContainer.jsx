@@ -2,7 +2,9 @@ import React from "react";
 import "./myStyles.css";
 import Sidebar from "./Sidebar";
 
-import ChatArea from "./ChatArea";
+// import ChatArea from "./ChatArea";
+import Welcome from "./Welcome";
+import CreateGroups from "./CreateGroups";
 const MainContainer = () => {
   const conversations = [
     {
@@ -29,8 +31,9 @@ const MainContainer = () => {
   return (
     <div className="main-container">
       <Sidebar conversations={conversations} />
-
-      <ChatArea conversations={conversations} />
+      <Welcome />
+      <CreateGroups />
+      {/* <ChatArea conversations={conversations} /> */}
     </div>
   );
 };

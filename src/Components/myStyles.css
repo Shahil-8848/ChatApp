@@ -1,5 +1,5 @@
 .main-container{
-    background-color: rgb(21, 50, 164);
+    background-color: rgb(235, 235, 235);
     height:90vh;
     width:90vw;
     display:flex;
@@ -66,7 +66,7 @@
 flex:0.7;
 }
 .chatArea-header {
-    background-color: orange;
+    background-color: rgb(112, 112, 112);
     display: flex;
     align-items: center;
     gap: 10px;
@@ -75,16 +75,24 @@ flex:0.7;
     margin: 10px;
     border-radius: 20px;}
 .messages-container {
-    
-
-flex: 1;}
+    overflow: scroll;
+    flex: 1;
+}
 .text-input-area {
-background-color: rgb(155, 154, 154);
-padding:10px 5px;
-margin: 10px ;
-border-radius: 20px;
-display: flex;
-justify-content: center;
+   
+    background-color: rgb(218, 218, 218);
+    padding: 10px 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+.text-box{
+    width:100%;
+    padding:10px;
+    background-color: rgb(211, 211, 211);
+    border:none;
 }
 .self-message-container{
     display: flex;
